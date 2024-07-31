@@ -1,19 +1,19 @@
 int i, n;
 
-  int n1 = 0, 22 = 1;
+  int a = 0, b = 1;
 
-  int nextTerm = n1 + n2;
+  int nextTerm = a + b;
 
   printf("Enter the number of terms: ");
   scanf("%d", &n);
 
-  printf("Fibonacci Series: %d, %d, ", n1, n2);
+  printf("Fibonacci Series: %d, %d, ", a, b);
 
   for (i = 3; i <= n; ++i) {
     printf("%d, ", nextTerm);
-    n1 = n2;
-    n2 = nextTerm;
-    nextTerm = n1 + n2;
+    a = b;
+    b = nextTerm;
+    nextTerm = a + b;
   }
 
   return 0;
